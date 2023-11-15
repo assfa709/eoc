@@ -1,0 +1,95 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+    font-family: optima, calibri, sans-serif;
+    background-color: #221900;
+    color: #ecd078;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em 0;
+    width: 100%;
+    background-color: #542437;
+}
+
+h1 {
+    padding-left: 0.5em;
+    font-family: Georgia;
+    font-size: 3em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 3.5em;
+    width: 100%;
+    background-color: inherit;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav li {
+    padding: 1em 2.5em;
+    text-transform: uppercase;
+}
+
+.current-page {
+    padding: 0.75em;
+    background-color: #ecd078;
+    color: #221900;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #d95b43;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-grow: 1;
+    max-width: 960;
+    font-family: monospace;
+    padding: 3.5em;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1em 0;
+    text-transform: uppercase;
+    background-color: #542437
+}
+
+footer p {
+    padding: 0 1.5em;
+}
+

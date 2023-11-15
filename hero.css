@@ -1,0 +1,309 @@
+
+body {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    line-height: 1.5rem;
+    font-family: monospace, sans-serif;
+    background-color:rgba(187, 212, 212, 0.772);
+
+}
+#hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/photoEoc.jpg);
+    background-position: center center;
+    background-size: cover;
+    color:  #600;   
+    font-family: serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    color: purple;  
+    /*background-color:skyblue;*/
+    text-shadow: white 2px 2px 4px;
+    background-image: linear-gradient(to bottom left, gray, gold, skyblue, gray)
+}
+
+h2 {
+    font-style: oblique;
+    
+}
+
+aside h2 {
+    color: purple;
+}
+
+article h2 {
+    font-style: normal;
+}
+
+#section2 p {
+    font-family:'Courier New', Courier, monospace;
+    color: rgb(56, 2, 56);    
+}
+
+#section3 h2 {
+    font-style: italic;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+aside p {
+    font-style: oblique;
+}
+
+#sphi {
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+}
+
+nav {
+    display: flex;
+    background-color:azure;
+    font-size: 1.5rem;
+}
+
+#logo {
+    margin: 2rem;
+}
+
+.welcome {
+    color: white;
+    margin: 0 9rem;
+    font-weight: bolder;
+    font-size:xx-large;
+    text-shadow: black 4px 4px 6px;
+}
+
+.meetting {
+    margin-top: 18rem;
+    padding-left: 12rem;
+    color: aqua;
+    font-style:oblique;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow:  black 4px 4px 6px;
+}
+
+a {
+    margin: 0 5px;
+    padding: 5px 15px;
+    border-radius: 3px 3px 0 0;
+    text-decoration: none;
+    color: #130202;
+    
+    }
+    a:hover, a:focus, a:active {
+    background-color: #ffcc22;
+    color: black;
+}
+
+
+
+@keyframes fillBg {
+    0% {
+    background-color: yellow;
+    }
+    100% {
+    background-color: red;
+    }
+    }
+
+a + a {
+    border-left: 1px solid #aaa;
+}
+a:hover {
+box-shadow: inset 0 -3px 0 #cc3232;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    display: flex;
+    justify-content:space-around;
+}
+
+#section1{
+    margin-top: 50px;
+}
+
+#section2 {    
+    background-color: azure;     
+}
+
+aside {
+    width: 30%;
+    border: black double 5px;
+    padding: 2rem;
+    text-justify: center;
+    
+}
+
+article {
+    width: 65%;
+    padding: 0 2rem;
+    background-color: aqua;
+    text-justify: center;
+
+}
+
+#responders {
+    padding: 0 2rem;
+    text-justify: center;
+ 
+}
+
+#emergencies {
+    padding: 0 2rem;
+    text-justify: center;     
+}
+
+#partner {
+    margin-right: 2rem;
+    padding: 2rem;
+    text-justify: center; 
+    border:#130202;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(102, 0, 0, 0.88);
+    font-size: 1.2rem;
+    color:#ebcd0b;
+}
+
+footer a {
+    color: rgb(232, 218, 218);
+}
+
+small {
+    font-style: italic;
+}
+
+
+@keyframes pulse {
+    100% {
+    text-shadow: 0 0 5px #bbb;
+    box-shadow: 0 0 3px 4px #bbb;
+    }
+    }
+
+ #logo:hover   {transform: rotate(30deg) skewX(-25deg) scaleY(2);}
+ @keyframes fadeout {
+    from {
+    opacity: 1;
+    }
+    to {
+    opacity: 0;
+    }
+}
+
+@keyframes color-pop {
+0% {
+color: black;
+background-color: white;
+}
+33% { /* one-third of the way through the animation */
+color: gray;
+background-color: yellow;
+}
+100% {
+color: white;
+background-color: orange;
+}
+}
+
+@keyframes change_bgcolor {
+    0%,
+    100% { background-color: red; }
+    45% { background-color: green; }
+    55% { background-color: blue; }
+    }
+
+@keyframes square_to_round {
+    0% {
+border-radius: 0%;
+}
+100%{
+border-radius: 50%;
+}
+}
+
+@keyframes W {
+    from, to {
+    top: 0;
+    left: 0;
+    }
+    25%, 75% {
+    top: 100%;
+    }
+    50% {
+    top: 50%;
+    }
+    to {
+    left: 100%;
+    }
+    }
+
+    aside {
+        animation-name: change_bgcolor, bg-shift, spin, round, W;
+        animation-duration: 200ms, 100ms, 0.5s;
+        animation-duration: 2s, 4s, 6s;
+animation-iteration-count: 3, 5;
+        }
+
+
+        aside {animation-name: change_bgcolor, bg-shift;}
+        @keyframes bg-shift {
+        0%, 100% {background-color: blue;}
+        35% {background-color: orange;}
+        55% {background-color: red;}
+        65% {background-color: purple;}
+        }
+
+        @keyframes change_bgcolor {0%, 100% {background-color: yellow;}
+45% {background-color: green;}
+55% {background-color: blue;}
+}
+
+@keyframes bouncing {
+from {
+transform: translateY(500px);
+}
+to {
+transform: translateY(0);
+}
+}
+
+@keyframes move {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(1000px);
+}
+}
+#logo {
+    animation-name: move;
+    animation-duration: 10s;
+animation-delay: -4s;
+
+animation-iteration-count: 10;
+animation-timing-function: ease-in;
+animation-direction: alternate;
+/*filter: blur(3px) drop-shadow(0.5em 0.75em 30px gray) opacity(0.5);*/
+filter: drop-shadow(0 0 0.5em yellow) drop-shadow(0.5em 0.75em 30px gray);
+}
+ 
+/* #logo {transform: translateX(200px) rotate(45deg);}
+.welcome:hover {transform: rotate(45deg) translatey(200px);}

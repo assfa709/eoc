@@ -1,0 +1,11 @@
+* {
+/*outline: 1px #ccc solid;*/
+margin: 2px;
+padding: 5px;
+}
+body, header, nav, #div1, #right, main, section {
+display: flex;
+}
+body {
+flex-direction: column;
+}

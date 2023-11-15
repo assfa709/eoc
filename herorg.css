@@ -1,0 +1,64 @@
+
+body {font-family: sans-serif;}
+#hero {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./images/org.png);
+    background-position: center center;
+    background-size: cover;
+    color:  #600;   
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    /*background-color:skyblue;*/
+    text-shadow: grey 2px 2px 4px;
+}
+
+#sphi {
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+}
+
+nav {
+    display: flex;
+    background-color: gainsboro);
+    font-size: 1.5rem;
+}
+
+#logo {
+    margin: 2rem;
+}
+
+.welcome {
+    color: white;
+    margin: 0 9rem;
+    font-weight: bolder;
+    font-size:xx-large;
+    text-shadow: black 4px 4px 6px;
+}
+
+.meetting {
+    margin-top: 18rem;
+    padding-left: 12rem;
+    color: aqua;
+    font-style:oblique;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-shadow:  black 4px 4px 6px;
+}
+
+a {
+    margin: 0 5px;
+    padding: 5px 15px;
+    border-radius: 3px 3px 0 0;
+    text-decoration: none;
+    color: #130202;
+    
+    }
+    a:hover, a:focus, a:active {
+    background-color: #ffcc22;
+    color: black;
+    }
