@@ -1,8 +1,0 @@
-@keyframes change_bgcolor {
-0%, 100% {background-color: yellow;}
-45% {background-color: green;}
-55% {background-color: blue;}
-}
-
-
-div {animation-name: change_bgcolor;}
