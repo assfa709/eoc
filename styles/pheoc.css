@@ -200,8 +200,9 @@ section {
 footer {
     background-color: #222;
     color: #fff;
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
     align-items: center;
     height: 300px;
 }
@@ -209,13 +210,28 @@ footer {
 .col-sm-3 {
     height: 200px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 20px 5px;
 
 }
 
 .footer-bg-accent {
     background-color: #FF9800;
-    height: 200px;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bg-accent a {
+    color: black;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.footer-bg-accent a:hover {
+    color: white;
 }
 
 /* Animations */
