@@ -161,6 +161,31 @@ main {
     -ms-transform: skewY(-3deg);
 }
 
+.emergencies .measles {
+    color: red;
+}
+
+.emergencies .measles {
+    color: red;
+}
+
+.emergencies .malaria {
+    color: red;
+}
+
+.emergencies .malnutrition {
+    color: yellow;
+}
+
+.emergencies .cholera {
+    color: green;
+}
+
+.emergencies p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .sub-main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
